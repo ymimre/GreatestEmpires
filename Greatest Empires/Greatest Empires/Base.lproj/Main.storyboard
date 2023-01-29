@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zpY-rw-eEh">
+    <device id="retina6_72" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Empire Detail View Controller-->
+        <scene sceneID="DVI-E8-HNX">
+            <objects>
+                <viewController id="goL-US-WtI" customClass="EmpireDetailViewController" customModule="Greatest_Empires" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLG-Ql-utZ">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hFD-pN-UwQ">
+                                <rect key="frame" x="189" y="129" width="52" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk" translatesAutoresizingMaskIntoConstraints="NO" id="OpU-c5-WiX">
+                                <rect key="frame" x="76" y="183" width="278" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="o6O-BJ-JNA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="British Empire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghw-VL-CA3">
+                                <rect key="frame" x="162" y="319" width="106" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35.5 Million Square Kilometers" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="old-rs-WUT">
+                                <rect key="frame" x="99.666666666666686" y="343.66666666666669" width="231" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1603 - 1997" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaU-zZ-Z1P">
+                                <rect key="frame" x="169" y="368.33333333333331" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ex9-mE-0ZC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OpU-c5-WiX" firstAttribute="centerX" secondItem="ex9-mE-0ZC" secondAttribute="centerX" id="0HB-7O-ytO"/>
+                            <constraint firstItem="oaU-zZ-Z1P" firstAttribute="firstBaseline" secondItem="old-rs-WUT" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="4uH-n7-MM6"/>
+                            <constraint firstItem="OpU-c5-WiX" firstAttribute="top" secondItem="hFD-pN-UwQ" secondAttribute="bottom" constant="33" id="6b1-de-NOr"/>
+                            <constraint firstItem="old-rs-WUT" firstAttribute="firstBaseline" secondItem="ghw-VL-CA3" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="7KL-2G-QFB"/>
+                            <constraint firstItem="hFD-pN-UwQ" firstAttribute="top" secondItem="ex9-mE-0ZC" secondAttribute="top" constant="26" id="L1b-Tc-Kfr"/>
+                            <constraint firstItem="oaU-zZ-Z1P" firstAttribute="centerX" secondItem="ex9-mE-0ZC" secondAttribute="centerX" id="R0U-Jv-grv"/>
+                            <constraint firstItem="OpU-c5-WiX" firstAttribute="leading" secondItem="ex9-mE-0ZC" secondAttribute="leading" constant="76" id="TnN-FW-Kp1"/>
+                            <constraint firstItem="old-rs-WUT" firstAttribute="centerX" secondItem="ex9-mE-0ZC" secondAttribute="centerX" id="aTw-rI-KTI"/>
+                            <constraint firstItem="ghw-VL-CA3" firstAttribute="firstBaseline" secondItem="OpU-c5-WiX" secondAttribute="baseline" constant="24.333333333333332" symbolType="layoutAnchor" id="e8j-c7-v9w"/>
+                            <constraint firstItem="ghw-VL-CA3" firstAttribute="centerX" secondItem="ex9-mE-0ZC" secondAttribute="centerX" id="eao-Vj-YtD"/>
+                            <constraint firstItem="hFD-pN-UwQ" firstAttribute="centerX" secondItem="ex9-mE-0ZC" secondAttribute="centerX" id="jAO-ig-U1H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1dI-Go-m4H"/>
+                    <connections>
+                        <outlet property="empireImageView" destination="OpU-c5-WiX" id="ZUD-UF-dCm"/>
+                        <outlet property="empireNameLabel" destination="ghw-VL-CA3" id="95F-dy-kG1"/>
+                        <outlet property="empireSizeLabel" destination="old-rs-WUT" id="jx6-Ju-lHf"/>
+                        <outlet property="empireTimePeriodLabel" destination="oaU-zZ-Z1P" id="aCL-G1-cdk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="419-Mw-6Ho" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1900" y="-122"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="OUj-FN-Mq8">
+            <objects>
+                <viewController id="pqk-9O-5eP" customClass="TableViewController" customModule="Greatest_Empires" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VkO-e4-TJI" customClass="Table">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Table View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HG5-tA-OHS">
+                                <rect key="frame" x="174" y="103" width="82" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NMc-Mb-Ywt">
+                                <rect key="frame" x="0.0" y="132" width="430" height="766"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="EmpireCell" rowHeight="124" id="gii-f0-YaZ" customClass="EmpiresTableViewCell" customModule="Greatest_Empires" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="430" height="124"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gii-f0-YaZ" id="Naa-7k-IW3">
+                                            <rect key="frame" x="0.0" y="0.0" width="430" height="124"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="INK-mk-IHY">
+                                                    <rect key="frame" x="8" y="19" width="174" height="94"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="94" id="MW1-23-aeI"/>
+                                                        <constraint firstAttribute="width" constant="174" id="cgB-rg-eVi"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="174" id="n3C-eS-X0S"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="British Empire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edn-wZ-Hru">
+                                                    <rect key="frame" x="250" y="52" width="143" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="INK-mk-IHY" firstAttribute="top" secondItem="Naa-7k-IW3" secondAttribute="top" constant="19" id="4Rh-NL-cJO"/>
+                                                <constraint firstItem="edn-wZ-Hru" firstAttribute="centerY" secondItem="Naa-7k-IW3" secondAttribute="centerY" id="Avz-Hb-Fow"/>
+                                                <constraint firstItem="edn-wZ-Hru" firstAttribute="leading" relation="lessThanOrEqual" secondItem="INK-mk-IHY" secondAttribute="trailing" constant="68" id="eCE-ln-COo"/>
+                                                <constraint firstItem="edn-wZ-Hru" firstAttribute="top" secondItem="Naa-7k-IW3" secondAttribute="topMargin" constant="41" id="hol-Ut-Tdl"/>
+                                                <constraint firstAttribute="trailing" secondItem="edn-wZ-Hru" secondAttribute="trailing" constant="37" id="qjn-xl-ZLa"/>
+                                                <constraint firstItem="INK-mk-IHY" firstAttribute="leading" secondItem="Naa-7k-IW3" secondAttribute="leading" constant="8" id="yLI-9e-NMP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="empireNameLabel" destination="edn-wZ-Hru" id="a5n-h8-j1A"/>
+                                            <outlet property="flagImageView" destination="INK-mk-IHY" id="WhB-PY-hEG"/>
+                                            <segue destination="goL-US-WtI" kind="show" id="v91-Rc-0YX"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="pqk-9O-5eP" id="sUU-HR-mJE"/>
+                                    <outlet property="delegate" destination="pqk-9O-5eP" id="pq5-U4-S0y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ehk-YU-i1K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NMc-Mb-Ywt" firstAttribute="top" secondItem="HG5-tA-OHS" secondAttribute="bottom" constant="8" symbolic="YES" id="Fif-o8-pIz"/>
+                            <constraint firstItem="NMc-Mb-Ywt" firstAttribute="leading" secondItem="Ehk-YU-i1K" secondAttribute="leading" id="HWm-Qh-Q45"/>
+                            <constraint firstItem="Ehk-YU-i1K" firstAttribute="trailing" secondItem="NMc-Mb-Ywt" secondAttribute="trailing" id="SLt-QG-srD"/>
+                            <constraint firstItem="HG5-tA-OHS" firstAttribute="centerX" secondItem="Ehk-YU-i1K" secondAttribute="centerX" id="pZr-1k-yfW"/>
+                            <constraint firstItem="Ehk-YU-i1K" firstAttribute="bottom" secondItem="NMc-Mb-Ywt" secondAttribute="bottom" id="rcM-xd-5d4"/>
+                            <constraint firstItem="HG5-tA-OHS" firstAttribute="top" secondItem="Ehk-YU-i1K" secondAttribute="top" id="x9c-Ba-wNE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wk4-lT-CNQ"/>
+                    <connections>
+                        <outlet property="empiresTableView" destination="NMc-Mb-Ywt" id="8IU-PQ-pV1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U3x-YT-KcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1054" y="-113"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="R37-AI-CvL">
+            <objects>
+                <navigationController id="zpY-rw-eEh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AIh-H7-DSu">
+                        <rect key="frame" x="0.0" y="59" width="430" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="7Rf-pO-7Fd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnW-yx-uZ5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-463" y="-943"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Greatest_Empires" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wos-DH-5HS">
+                                <rect key="frame" x="183.66666666666666" y="838.66666666666663" width="63" height="34.333333333333371"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="INFO"/>
+                                <connections>
+                                    <segue destination="3tI-lm-K9H" kind="presentation" id="IZ3-bO-xlx"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Greatest Empires in History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLr-JB-xNS">
+                                <rect key="frame" x="94.666666666666686" y="134" width="241" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxG-ng-2VA">
+                                <rect key="frame" x="17" y="483" width="119" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TABLE VIEW"/>
+                                <connections>
+                                    <segue destination="pqk-9O-5eP" kind="show" id="GUh-7C-fJo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCL-xG-Gau">
+                                <rect key="frame" x="241" y="483" width="173" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="COLLECTION VIEW"/>
+                                <connections>
+                                    <segue destination="Uog-Nu-SJT" kind="show" id="dEh-iS-YIr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="wos-DH-5HS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9de-mH-HF3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="wos-DH-5HS" secondAttribute="bottom" constant="25" id="ACd-yU-4Sv"/>
+                            <constraint firstItem="uxG-ng-2VA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="MEE-9f-UE7"/>
+                            <constraint firstItem="uxG-ng-2VA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="OBL-tx-lw9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XCL-xG-Gau" secondAttribute="trailing" constant="16" id="PPg-7d-Zmx"/>
+                            <constraint firstItem="uxG-ng-2VA" firstAttribute="centerY" secondItem="XCL-xG-Gau" secondAttribute="centerY" id="QpI-3J-srg"/>
+                            <constraint firstItem="RLr-JB-xNS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gjp-4U-D6F"/>
+                            <constraint firstItem="RLr-JB-xNS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="31" id="iCS-0r-pt8"/>
+                            <constraint firstItem="XCL-xG-Gau" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uxG-ng-2VA" secondAttribute="trailing" constant="8" symbolic="YES" id="pzc-Eq-qq1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="pW4-Ap-KND"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="-113"/>
+        </scene>
+        <!--Collection View Controller-->
+        <scene sceneID="hNT-YV-4uU">
+            <objects>
+                <viewController id="Uog-Nu-SJT" customClass="CollectionViewController" customModule="Greatest_Empires" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sGW-ib-TLW">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fr4-hL-exW">
+                                <rect key="frame" x="0.0" y="190" width="430" height="767"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Qbz-li-zNf">
+                                    <size key="itemSize" width="143" height="65"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmpireCollectionCell" id="zZi-BR-slZ" customClass="EmpiresCollectionViewCell" customModule="Greatest_Empires" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="143" height="65"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ZXj-Bj-iQg">
+                                            <rect key="frame" x="0.0" y="0.0" width="143" height="65"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="uk" translatesAutoresizingMaskIntoConstraints="NO" id="xxR-uV-qw3">
+                                                    <rect key="frame" x="0.0" y="0.0" width="143" height="65"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="65" id="EVX-Je-3ji"/>
+                                                        <constraint firstAttribute="width" constant="143" id="ihK-Ao-Q6y"/>
+                                                        <constraint firstAttribute="width" secondItem="xxR-uV-qw3" secondAttribute="height" multiplier="70:35" id="kDq-6Q-Li5"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="xxR-uV-qw3" secondAttribute="bottom" id="3Gm-JO-6Sl"/>
+                                                <constraint firstAttribute="trailing" secondItem="xxR-uV-qw3" secondAttribute="trailing" id="9Mj-kj-QMc"/>
+                                                <constraint firstItem="xxR-uV-qw3" firstAttribute="leading" secondItem="ZXj-Bj-iQg" secondAttribute="leading" id="AAc-DY-IPS"/>
+                                                <constraint firstItem="xxR-uV-qw3" firstAttribute="top" secondItem="ZXj-Bj-iQg" secondAttribute="top" id="JNC-bl-ukK"/>
+                                                <constraint firstItem="xxR-uV-qw3" firstAttribute="centerX" secondItem="ZXj-Bj-iQg" secondAttribute="centerX" id="PNP-9J-cYQ"/>
+                                                <constraint firstItem="xxR-uV-qw3" firstAttribute="centerY" secondItem="ZXj-Bj-iQg" secondAttribute="centerY" id="c2e-Vk-BvR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="143" height="65"/>
+                                        <connections>
+                                            <outlet property="empireFlagImageView" destination="xxR-uV-qw3" id="6bd-Wk-Ghc"/>
+                                            <segue destination="goL-US-WtI" kind="show" id="5GE-qx-ipR"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Uog-Nu-SJT" id="1Fy-Fs-ksY"/>
+                                    <outlet property="delegate" destination="Uog-Nu-SJT" id="UVZ-il-Kz0"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Collection View" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJa-ZE-qWY">
+                                <rect key="frame" x="156" y="121.00000000000001" width="118" height="60.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9sR-uH-YFf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9sR-uH-YFf" firstAttribute="trailing" secondItem="fr4-hL-exW" secondAttribute="trailing" id="57h-2S-2rY"/>
+                            <constraint firstItem="fr4-hL-exW" firstAttribute="firstBaseline" secondItem="gJa-ZE-qWY" secondAttribute="baseline" constant="12.333333333333334" symbolType="layoutAnchor" id="80R-dQ-edD"/>
+                            <constraint firstItem="fr4-hL-exW" firstAttribute="leading" secondItem="9sR-uH-YFf" secondAttribute="leading" id="EVc-gi-CsM"/>
+                            <constraint firstItem="9sR-uH-YFf" firstAttribute="bottom" secondItem="fr4-hL-exW" secondAttribute="bottom" constant="-59" id="Tpk-r5-OdP"/>
+                            <constraint firstItem="gJa-ZE-qWY" firstAttribute="top" secondItem="9sR-uH-YFf" secondAttribute="top" constant="18" id="dKT-Cd-5Jx"/>
+                            <constraint firstItem="fr4-hL-exW" firstAttribute="top" secondItem="9sR-uH-YFf" secondAttribute="top" constant="87" id="rA1-yD-fgX"/>
+                            <constraint firstItem="gJa-ZE-qWY" firstAttribute="centerX" secondItem="9sR-uH-YFf" secondAttribute="centerX" id="tMc-Bq-A7q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="33j-8s-HBs"/>
+                    <connections>
+                        <outlet property="empiresCollectionView" destination="fr4-hL-exW" id="DDC-F5-MHp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DeR-90-thP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="694.88372093023258" y="-125.53648068669528"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="odu-ME-jem">
+            <objects>
+                <viewController id="3tI-lm-K9H" customClass="InfoViewController" customModule="Greatest_Empires" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J57-iI-trm">
+                        <rect key="frame" x="0.0" y="0.0" width="430" height="863"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fN-yC-nn2">
+                                <rect key="frame" x="200.66666666666666" y="69" width="29" height="20.666666666666671"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YaG-dg-LOq">
+                                <rect key="frame" x="16" y="134.33333333333331" width="398" height="687.66666666666674"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">This application shows the 10 biggest empires ever existed throughout history. The flags and information can be found in Wikipedia. Designed and developed by Yusuf Mert İmre.                                                                                     </string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="99o-Pv-JVB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5fN-yC-nn2" firstAttribute="centerX" secondItem="99o-Pv-JVB" secondAttribute="centerX" id="5hy-aT-HE2"/>
+                            <constraint firstItem="YaG-dg-LOq" firstAttribute="leading" secondItem="99o-Pv-JVB" secondAttribute="leading" constant="16" id="73J-Ye-oS8"/>
+                            <constraint firstItem="99o-Pv-JVB" firstAttribute="trailing" secondItem="YaG-dg-LOq" secondAttribute="trailing" constant="16" id="8k2-DE-caF"/>
+                            <constraint firstItem="YaG-dg-LOq" firstAttribute="centerX" secondItem="99o-Pv-JVB" secondAttribute="centerX" id="Dtc-cu-Xfa"/>
+                            <constraint firstItem="99o-Pv-JVB" firstAttribute="bottom" secondItem="YaG-dg-LOq" secondAttribute="bottom" constant="41" id="bY1-4x-ZXS"/>
+                            <constraint firstItem="5fN-yC-nn2" firstAttribute="top" secondItem="99o-Pv-JVB" secondAttribute="top" constant="10" id="uCD-jp-gLl"/>
+                            <constraint firstItem="YaG-dg-LOq" firstAttribute="top" secondItem="5fN-yC-nn2" secondAttribute="bottom" constant="44.666666666666657" id="v6G-Ve-d4K"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w7X-XX-jGI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-550.38167938931292" y="726.76056338028172"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="5GE-qx-ipR"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="uk" width="640" height="320"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
